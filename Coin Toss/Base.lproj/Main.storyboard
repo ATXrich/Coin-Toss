@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coin_Toss" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Heads:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-Yh-VlU">
+                                <rect key="frame" x="75" y="590" width="66" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="FsC-qg-BHh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tails:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoG-eu-J8s">
+                                <rect key="frame" x="219" y="590" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="aAx-5j-Dfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ne2-Xj-QLN">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jqY-t6-bq1"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Flip Coin" id="Kqw-jZ-ZU8">
+                                        <connections>
+                                            <action selector="flipCoinButton:" destination="BYZ-38-t0r" id="DUS-mM-LXp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CAm-Jq-dyB"/>
+                                    <barButtonItem title="Reset" id="E35-z2-3Ny">
+                                        <connections>
+                                            <action selector="resetButton:" destination="BYZ-38-t0r" id="mw7-RM-G5L"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaX-S4-Zb2">
+                                <rect key="frame" x="143" y="590" width="40" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NqT-lS-nux"/>
+                                    <constraint firstAttribute="width" constant="40" id="hP1-Ck-5Tv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g88-hh-9Ds">
+                                <rect key="frame" x="269" y="590" width="32" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="ZCd-Xh-pfc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZCd-Xh-pfc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGh-Ck-1pR">
+                                <rect key="frame" x="143" y="312" width="89" height="43"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ne2-Xj-QLN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0XU-x0-Frr"/>
+                            <constraint firstItem="jGh-Ck-1pR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="18E-o2-3Kx"/>
+                            <constraint firstItem="g88-hh-9Ds" firstAttribute="leading" secondItem="QoG-eu-J8s" secondAttribute="trailing" constant="3" id="2gS-bH-dt9"/>
+                            <constraint firstItem="jGh-Ck-1pR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="292" id="43z-yf-Hbj"/>
+                            <constraint firstItem="ne2-Xj-QLN" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7hN-9e-PPN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g88-hh-9Ds" secondAttribute="trailing" constant="58" id="DLH-DM-g9x"/>
+                            <constraint firstItem="g88-hh-9Ds" firstAttribute="bottom" secondItem="QoG-eu-J8s" secondAttribute="bottom" id="E1H-FJ-74g"/>
+                            <constraint firstItem="BDE-Yh-VlU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="F90-Pc-SyU"/>
+                            <constraint firstItem="jGh-Ck-1pR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HoT-pM-ALx"/>
+                            <constraint firstItem="jGh-Ck-1pR" firstAttribute="leading" secondItem="xaX-S4-Zb2" secondAttribute="leading" id="QkM-65-eqc"/>
+                            <constraint firstItem="g88-hh-9Ds" firstAttribute="leading" secondItem="QoG-eu-J8s" secondAttribute="trailing" constant="3" id="VR8-Lh-3TK"/>
+                            <constraint firstItem="g88-hh-9Ds" firstAttribute="top" secondItem="QoG-eu-J8s" secondAttribute="top" id="cTQ-rm-VHy"/>
+                            <constraint firstItem="xaX-S4-Zb2" firstAttribute="leading" secondItem="BDE-Yh-VlU" secondAttribute="trailing" constant="2" id="cwf-nd-GpQ"/>
+                            <constraint firstItem="xaX-S4-Zb2" firstAttribute="baseline" secondItem="g88-hh-9Ds" secondAttribute="baseline" id="gO1-FF-Q55"/>
+                            <constraint firstItem="ne2-Xj-QLN" firstAttribute="top" secondItem="QoG-eu-J8s" secondAttribute="bottom" constant="12" id="hCz-Q4-Kvu"/>
+                            <constraint firstItem="xaX-S4-Zb2" firstAttribute="firstBaseline" secondItem="g88-hh-9Ds" secondAttribute="firstBaseline" id="jW6-6x-niq"/>
+                            <constraint firstItem="jGh-Ck-1pR" firstAttribute="centerX" secondItem="ne2-Xj-QLN" secondAttribute="centerX" id="jXI-sh-Mn1"/>
+                            <constraint firstItem="BDE-Yh-VlU" firstAttribute="firstBaseline" secondItem="QoG-eu-J8s" secondAttribute="firstBaseline" id="kpq-ea-EAR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g88-hh-9Ds" secondAttribute="trailing" constant="58" id="l0z-i9-07M"/>
+                            <constraint firstItem="BDE-Yh-VlU" firstAttribute="baseline" secondItem="QoG-eu-J8s" secondAttribute="baseline" id="p2H-Ni-LWi"/>
+                            <constraint firstItem="QoG-eu-J8s" firstAttribute="leading" secondItem="xaX-S4-Zb2" secondAttribute="trailing" constant="36" id="vzH-3M-5eE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QoG-eu-J8s" secondAttribute="trailing" constant="89" id="xgV-pM-2KK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xgV-pM-2KK"/>
+                                <exclude reference="VR8-Lh-3TK"/>
+                                <exclude reference="l0z-i9-07M"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headsCountLabel" destination="xaX-S4-Zb2" id="jdD-WD-qXr"/>
+                        <outlet property="resultLabel" destination="jGh-Ck-1pR" id="dCk-ts-9bb"/>
+                        <outlet property="tailsCountLabel" destination="g88-hh-9Ds" id="dyX-Nz-VV4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265.5" y="413.5"/>
+        </scene>
+    </scenes>
+</document>
